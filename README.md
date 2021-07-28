@@ -1,4 +1,4 @@
-# Road to Java, SQL (maybe minecraft modder or plugins) devoloper
+# Road to Java, SQL (maybe minecraft modder or plugins) developer
 Ok with this repo I will upload every day and upload a video in my channel to forced myself to learn new things. Why? 
 
 ## Long story short I'm in a job (I don't know if I can say the company) and we're in the capacitation/bootcamp. 
