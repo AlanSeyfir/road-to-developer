@@ -76,3 +76,10 @@ SELECT SUM(release_year) from albums;
 SELECT band_id, COUNT(band_id) FROM albums
 GROUP BY band_id; -- Shows a table to know how many bands with the band_id are in the DB
 
+SELECT b.name AS band_name, COUNT(a.id) AS num_albums
+FROM bands AS b
+LEFT JOIN albums AS a ON b.id = a.band_id
+-- WHERE b.name = 'Miss A' -- find only Miss A
+GROUP BY b.id
+HAVING num_albums = 1; -- find only a band that has only 1 album
+
