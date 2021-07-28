@@ -1,7 +1,7 @@
 # road-to-developer
 Ok with this repo I will upload every day and upload a video in my channel to forced myself to learn new things. Why? 
 
-###Long story short I'm in a job (I don't know if I can say the company) and we're in the capacitation/bootcamp. 
+##Long story short I'm in a job (I don't know if I can say the company) and we're in the capacitation/bootcamp. 
 
 Bc we're trainees they're give some languages and we need to learn them. In my previous repos I was doing some Java and now I'm with SQL. 
 Although I fail the interview with java concepts (OOP, abstract, exception, etc) pretty simple BUT fake till to you make it and PRACTICE.
