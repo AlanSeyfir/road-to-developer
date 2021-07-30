@@ -52,7 +52,7 @@ GROUP BY albums.band_id
 HAVING COUNT(albums.id) = 0;
 -- Same lmao 
 
--- 6. Get the Longest Album
+-- [DONE] 6. Get the Longest Album
 SELECT albums.name AS 'Name', 
 	   release_year AS 'Release Year', 
        SUM(songs.length) AS 'Duration'
@@ -60,6 +60,53 @@ FROM albums
 JOIN songs ON albums.id = songs.album_id
 GROUP BY songs.album_id -- Check later
 ORDER BY Duration DESC; -- Check later
+
+-- [DONE] 7. Update the Release Year of the Album with no Release Year
+UPDATE albums
+SET release_year = 1986
+WHERE id = 4;
+-- The same lmao
+
+-- [DONE] 8. Insert a record for your favorite Band and one of their Albums
+INSERT INTO bands(name) VALUES('PXNDX');
+INSERT INTO albums(name,release_year, band_id) VALUES ('Amantes Sunt Amentes', 2006, 8);
+-- SELECT id FROM bands ORDER BY id DESC LIMIT 1; -- Know if the row is added
+
+-- [DONE] 9. Delete the Band and Album you added in #8
+DELETE FROM albums WHERE band_id = 8;
+DELETE FROM bands WHERE id = 8;
+
+-- [DONE] 10. Get the Average Length of all Songs
+SELECT AVG(length) AS 'Average Song Duration' FROM songs;
+
+-- [DONE] 11. Select the longest Song off each Album
+SELECT albums.name AS 'Album',
+	   release_year AS 'Release Year',
+	   MAX(length) AS 'Duration'
+FROM albums
+JOIN songs ON albums.id = songs.album_id
+GROUP BY album_id;
+-- The only changed is in GROUP BY songs.album_id
+
+-- [DONE] 12. Get the number of Songs for each Band
+SELECT bands.name AS 'Band',
+	   COUNT(songs.id) AS 'Number of Songs'
+FROM bands
+JOIN songs ON bands.id = songs.album_id
+JOIN albums ON bands.id = albums.band_id
+GROUP BY songs.album_id;
+
+/*SELECT bands.name AS 'Band',
+	   COUNT(songs.id) AS 'Number of Songs'
+FROM bands
+JOIN albums ON bands.id = albums.band_id
+JOIN songs ON albums.id = songs.album_id
+GROUP BY albums.band_id;*/
+
+SELECT COUNT(album_id) FROM songs;
+
+SELECT * FROM albums;
+SELECT * FROM bands;
 
 INSERT INTO bands(id,name) VALUES (1,'Seventh Wonder');
 INSERT INTO bands(id,name) VALUES (2,'Metallica');
