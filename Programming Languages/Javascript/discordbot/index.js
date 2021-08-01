@@ -63,5 +63,5 @@ client.on('message', async message =>{
     }
 });
 
-client.login('ODcxMTU1NTAzOTk5MzgxNTE1.YQXMyQ.Kl0VuKcJ7AYqKAxwgA5u7wd9nSo');
+client.login('YOU TOUGHT LMAO');
 
