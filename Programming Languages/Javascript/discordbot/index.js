@@ -41,6 +41,7 @@ client.on('message', async message =>{
     if (message.content === '!fazt') {
         message.channel.send('https://www.youtube.com/watch?v=EUB777JJT5E');
         message.channel.send('https://www.freecodecamp.org/news/create-a-discord-bot-with-javascript-nodejs/');
+        message.channel.send('https://github.com/AlanSeyfir');
     }
 
     if (message.content === '!pretty') {
