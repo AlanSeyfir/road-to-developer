@@ -10,3 +10,5 @@ See it like 30daysofcode or 100days. But for me I want it to be until my semeste
 I don't that just came out of my mind right now.
 
 Ok, so I'm starting to learn spring to code frontend and backend bc I can't think an exercise for java. That's why I found spring mix web dev and j a v a.
+
+I'm changing bewteen Java and Javascript bc I prefer Frontend and JS is fun than Java lmao
