@@ -112,3 +112,119 @@ library.sort((a,b) =>{
     return 0;
 });
 console.log(library);
+
+console.groupCollapsed('Functions');
+    //You can make a function to a variable
+    const functionName = function showName(name){
+        return console.log('Hello' + ' ' + name);
+    }
+
+    functionName('Alan');
+
+    //Also can be passed as a argument
+    const showCar = function() {
+        return console.log("My car is Shelby Cobra");
+    };
+
+    const executeShowCar = function(showCarFunction){
+        showCarFunction();
+    }
+
+    executeShowCar(showCar);
+
+    //Functions as property
+    let myObj = {
+        testProp: true,
+        functionInObject: function(description){console.log(description);}
+    }
+    myObj.functionInObject('Function in Object1');
+
+    myObj.property1 = function(){
+        console.log("Function in Object2");
+    }
+    myObj.property1();
+
+    //Functions as arguments. NOTE: arguments IS NOT a name a just put it, is a reserved word
+    let add = function(){
+        let i, sum = 0;
+
+        for (i = 0; i < arguments.length; i++) {
+            sum += arguments[i];
+        }
+        return sum;
+    }
+    console.log(add(1,2,3,4,5,6));
+    console.log(add(1,2,3));
+
+console.groupEnd();
+
+//Javascript Constructors. Better way instead coding the same in objects
+console.groupCollapsed('Constructors');
+    testObj = {
+        name: 'dsdsd',
+        age: 18,
+        vision: 'sd',
+    }
+
+    genshinCharacter = function(name, age, vision){
+        this.name = name;
+        this.age = age;
+        this.vision = vision;
+    }
+
+    let benny = new genshinCharacter('Benny', 15, 'Pyro');
+    benny.weapon = 'sword';
+    benny.hasFriends = true;
+
+    let Hu_Tao = new genshinCharacter('Hu Tao', 16, 'Pyro');
+    Hu_Tao.weapon = 'Spear';
+    Hu_Tao.hasFriends = true; 
+
+    console.table(benny); 
+    console.table(Hu_Tao);
+console.groupEnd();
+
+weapons = ['sword', 'shield', 'spear', 'bow', 'staff', 'book', 'gun'];
+//Easier this way lmao
+weapons.forEach(element => {
+    console.log(element);
+});
+
+//See this in a tutorial...but it was from 2016
+let myFunction = function(item){
+    console.log("For an element " + item);
+}
+weapons.forEach(myFunction);
+
+console.log('--------------------------------------------------');
+
+//Scope
+let productId = 12345;
+function showProductId(){
+    function fix(){
+        let productId = 9876;
+        console.log('in fix:', productId);
+    }
+    fix();
+    console.log('in showProductId: ', productId);
+}
+showProductId();
+
+//Closure
+let myClosure = (function(){
+    let i = 0;
+    return function () {
+        return console.log(i += 1);
+    }
+})();
+
+myClosure();// i = 1
+myClosure();// i = 2
+myClosure();// i = 3
+
+
+//DOM
+
+function changeColor(){
+    let p1 = document.getElementById('demo').style.color = 'red';
+}
