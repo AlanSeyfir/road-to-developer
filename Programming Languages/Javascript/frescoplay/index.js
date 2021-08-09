@@ -184,19 +184,19 @@ console.groupCollapsed('Constructors');
     console.table(Hu_Tao);
 console.groupEnd();
 
-weapons = ['sword', 'shield', 'spear', 'bow', 'staff', 'book', 'gun'];
-//Easier this way lmao
-weapons.forEach(element => {
-    console.log(element);
-});
+console.groupCollapsed('Arrays and forEach');
+    weapons = ['sword', 'shield', 'spear', 'bow', 'staff', 'book', 'gun'];
+    //Easier this way lmao
+    weapons.forEach(element => {
+        console.log(element);
+    });
 
-//See this in a tutorial...but it was from 2016
-let myFunction = function(item){
-    console.log("For an element " + item);
-}
-weapons.forEach(myFunction);
-
-console.log('--------------------------------------------------');
+    //See this in a tutorial...but it was from 2016
+    let myFunction = function(item){
+        console.log("For an element " + item);
+    }
+    weapons.forEach(myFunction);
+console.groupEnd();
 
 //Scope
 let productId = 12345;
@@ -221,10 +221,62 @@ let myClosure = (function(){
 myClosure();// i = 1
 myClosure();// i = 2
 myClosure();// i = 3
-
+console.log('---------------------------------------')
 
 //DOM
-
+//getElementById
 function changeColor(){
     let p1 = document.getElementById('demo').style.color = 'red';
 }
+
+//We can add a for or forEach loop getElementsByTagName
+function changeFont(){
+    let h3 = document.getElementsByTagName("h3");
+    h3[0].style.fontStyle = 'italic';
+    h3[1].style.fontStyle = 'italic';
+    h3[2].style.fontStyle = 'italic';
+    h3[3].style.fontStyle = 'italic';
+}
+
+// let d = document.getElementById("top");
+// let d_nested = document.getElementById("nested");
+//d.removeChild(d_nested); <- Why Uncaught TypeError: Cannot read property 'removeChild' of null
+// d_nested.remove();
+
+document.addEventListener('click', () =>{
+    document.body.style.backgroundColor = 'blue';
+})
+
+function myEventHandler(e){}
+
+let content = document.getElementById('content');
+let button =  document.getElementById('show-content');
+
+// button.onclick = function(){
+//     if(content.className == 'open'){
+//         //shrink the box
+//         content.className = "";
+//         button.innerHTML = 'Show More';
+//     }else{
+//         //expand the box
+//         content.className = 'open';
+//         button.innerHTML = 'Show Less';
+//     }
+// }
+
+//This uses the onload in body
+function loadFunction(){
+    //call the function in load time
+    document.write('Inside the function!');
+}
+
+let form = document.getElementById('form');
+//Focus event
+form.addEventListener('focus', function(e){
+    e.target.style.backgroundColor = 'lightblue';
+},true);
+
+//Blur event
+form.addEventListener('blur', (e) =>{
+    e.target.style.backgroundColor = '';
+}, true);

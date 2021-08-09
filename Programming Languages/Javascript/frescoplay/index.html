@@ -5,18 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js"></script>
-
     <style>
         html{
             background-color: black;
             color: white;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
-<body>
+<body> <!-- this is in body: onload="loadFunction()" -->
     <h1>sasas</h1>
     <p id="demo">Text to change </p>
     <button onclick="changeColor()">dsdas</button>
+
+    <h3 id="text1">Some text in this HTML</h3>
+    <h3 id="text2">Some text in this HTML</h3>
+    <h3 id="text3">Some text in this HTML</h3>
+    <h3 id="text4">Some text in this HTML</h3>
+    <button onclick="changeFont()">Change Font</button>
+    
+    <div id="top1">
+        Hola
+        <div id="nested">Text to be removed</div> <!-- This text is removed -->
+    </div>
+
+    <div id="form">
+        <input id="name" type="text" placeholder="Name">
+        <input id="password" type="password" placeholder="Password">
+    </div>
+
+    <script type="text/javascript">
+    let d = document.getElementById("top");
+    let d_nested = document.getElementById("nested");
+    // d.removeChild(d_nested);
+    d_nested.remove();
+    </script>
+    <script src="index.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
