@@ -1,3 +1,21 @@
+Ok now officially I will start the 100 days of code (although I started at 30 of Aug 2021) but anyways here is what I want to learn in this challenge.
+This is my wishlist to understand at full but let's be real it's difficult. Also I want to apply to the typical FANGish companies.
+* Frontend
+  *HTML,CSS
+  * Javascript
+  * React
+  * SASS
+* Backend
+  * Next
+  * Node.js
+  * Express
+  * MongoDB
+* Git and Bash
+* SEO, Webpack and NPM/Yarn
+* Wordpress (for freelancing to obtain money yea)
+* Leetcode Questions
+* Learn Python
+
 # Road to Java, SQL, HTML,CSS,JS (maybe minecraft modder or plugins or fullstack) developer. Later React Yeah
 Ok with this repo I will upload every day and upload a video in my channel to forced myself to learn new things. Why? 
 
