@@ -1,0 +1,49 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+}
+
+.btn{
+    padding: .75em;
+    background-color: #EBA300;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: rgb(98, 27, 165);
+}
+
+img{
+    width: 15em;
+}
+
+.start{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.meal__info{
+    display: flex;
+    margin: 0 15%;
+}
+
+.general__info{
+    margin: 0 5%;
+}
+
+.video__title{
+    text-align: center;
+}
+
+.video__container{
+    margin: 1em 25%;
+}
+
+.ingredients{
+    margin: 0 12%;
+}

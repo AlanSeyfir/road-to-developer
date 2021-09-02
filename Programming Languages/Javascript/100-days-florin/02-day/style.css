@@ -1,0 +1,58 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+button:hover {
+  animation: 1s;
+}
+
+.selected {
+  transform: scale(1.5);
+}
+
+.mood_2 {
+  transform: scale(1.5);
+}
+
+.mood_3 {
+  transform: scale(1.5);
+}
+
+.mood_4 {
+  transform: scale(1.5);
+}
+
+.mood_5 {
+  transform: scale(1.5);
+}
+
+.face__cool:hover {
+  background-color: #8dd1273f;
+  border-radius: 50%;
+}
+
+.face__ecstatic:hover {
+  background-color: #99ec2d3d;
+  border-radius: 50%;
+}
+
+.face__happy:hover {
+  background-color: #ecdf2d41;
+  border-radius: 50%;
+}
+
+.face__normal:hover {
+  background-color: #ecaf2d33;
+  border-radius: 50%;
+}
+
+.face__sad:hover {
+  background-color: #ec632d2a;
+  border-radius: 50%;
+}
