@@ -1,4 +1,4 @@
-Ok now officially I will start the 100 days of code (although I started at 30 of Aug 2021) but anyways here is what I want to learn in this challenge.
+### Ok now officially I will start the 100 days of code (although I started at 30 of Aug 2021) but anyways here is what I want to learn in this challenge.
 This is my wishlist to understand at full but let's be real it's difficult. Also I want to apply to the typical FANGish companies.
 * Frontend
   *HTML,CSS
