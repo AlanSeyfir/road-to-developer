@@ -29,4 +29,4 @@ I don't that just came out of my mind right now.
 
 Ok, so I'm starting to learn spring to code frontend and backend bc I can't think an exercise for java. That's why I found spring mix web dev and j a v a.
 
-I'm changing bewteen Java and Javascript bc I prefer Frontend and JS is fun than Java lmao. (Although I learn JS BUT I need to do the courses in fresco play, it's a good platform ngl).
+I'm changing bewteen Java and Javascript bc I prefer Frontend and JS is fun than Java lmao. (Although I learn JS BUT I need to do the courses in fresco play, it's a good platform ngl)
