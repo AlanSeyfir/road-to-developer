@@ -5,6 +5,7 @@ This is my wishlist to understand at full but let's be real it's difficult. Also
   * Javascript
   * React
   * SASS
+  * Typescript
 * Backend
   * Next
   * Node.js
