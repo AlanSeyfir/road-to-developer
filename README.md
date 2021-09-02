@@ -16,6 +16,7 @@ This is my wishlist to understand at full but let's be real it's difficult. Also
 * Wordpress (for freelancing to obtain money yea)
 * Leetcode Questions
 * Learn Python
+* AWS
 
 # Road to Java, SQL, HTML,CSS,JS (maybe minecraft modder or plugins or fullstack) developer. Later React Yeah
 Ok with this repo I will upload every day and upload a video in my channel to forced myself to learn new things. Why? 
