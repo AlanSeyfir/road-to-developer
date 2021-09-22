@@ -1,0 +1,126 @@
+/*TODO: add the font family*/
+/*Variables*/
+$desktop: 1440px;
+$mobile: 375px;
+$primary-dblue:hsl(240, 38%, 20%) ; 
+$primary-gblue:hsl(240, 18%, 77%);
+$font-body: 2rem;
+/*Font weight are 300, 500 and 700*/
+*{ padding: 0; margin: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+
+img{
+    width: 100%;
+}
+
+.hero__container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em 0;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero__testimonial{
+    font-size: $font-body;
+    max-width: 620px;
+    position: relative;
+    color: $primary-dblue;
+
+    .hero__quotes{
+        width: 15%;
+        position: absolute;
+        left: 4.5em;
+        bottom: 100%;
+        transform: translate(-50%,35%);
+    }
+
+    
+
+    .hero__subtext{
+        .hero__name{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $primary-dblue;
+        }
+
+        .hero__job__position{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $primary-gblue;
+        }
+
+        margin-top: 1em;
+        display: flex;
+
+        p:first-of-type{
+            margin-right: .6em;
+        }
+    }
+}
+
+.hero__image{
+    position: relative;
+    // z-index: -1;
+    left: -5em;
+
+    .hero__image__person{
+        position: relative;
+        z-index: -1;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: rgba(139, 139, 139, 0.349) 0 20px 50px 10px;
+    }
+
+    .hero__circles{
+        position: absolute;
+        width: 115%;
+        z-index: -2;
+        top: 100%;
+        right: 20%;
+        transform: translate(16%,-94%);
+    }
+
+    .hero__btn{
+        cursor: pointer;
+        position: relative;
+        top: -25px;
+        left: 28px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 5.5em;
+        padding: .7em;
+        border-radius: 30px;
+        background-color: white;/*TODO: Change to white*/
+        border: none;
+        
+    
+        img{
+            width: .8em;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero__image{
+        width: 140em;
+        left: 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .hero__image{
+        width: 100%;
+        top: -8em;
+    }
+
+    .hero__testimonial{
+        font-size: 1.5rem;
+    }
+
+    .hero__container{
+        flex-direction: column-reverse;
+    }
+}

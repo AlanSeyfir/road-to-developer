@@ -1,0 +1,141 @@
+/*TODO: add the font family*/
+/*Variables*/
+/*Font weight are 300, 500 and 700*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.hero__testimonial {
+  font-size: 2rem;
+  max-width: 620px;
+  position: relative;
+  color: #202046;
+}
+
+.hero__testimonial .hero__quotes {
+  width: 15%;
+  position: absolute;
+  left: 4.5em;
+  bottom: 100%;
+  -webkit-transform: translate(-50%, 35%);
+          transform: translate(-50%, 35%);
+}
+
+.hero__testimonial .hero__subtext {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__testimonial .hero__subtext .hero__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #202046;
+}
+
+.hero__testimonial .hero__subtext .hero__job__position {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #babacf;
+}
+
+.hero__testimonial .hero__subtext p:first-of-type {
+  margin-right: .6em;
+}
+
+.hero__image {
+  position: relative;
+  left: -5em;
+}
+
+.hero__image .hero__image__person {
+  position: relative;
+  z-index: -1;
+  width: 80%;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(139, 139, 139, 0.349) 0 20px 50px 10px;
+          box-shadow: rgba(139, 139, 139, 0.349) 0 20px 50px 10px;
+}
+
+.hero__image .hero__circles {
+  position: absolute;
+  width: 115%;
+  z-index: -2;
+  top: 100%;
+  right: 20%;
+  -webkit-transform: translate(16%, -94%);
+          transform: translate(16%, -94%);
+}
+
+.hero__image .hero__btn {
+  cursor: pointer;
+  position: relative;
+  top: -25px;
+  left: 28px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 5.5em;
+  padding: .7em;
+  border-radius: 30px;
+  background-color: white;
+  /*TODO: Change to white*/
+  border: none;
+}
+
+.hero__image .hero__btn img {
+  width: .8em;
+}
+
+@media (max-width: 1100px) {
+  .hero__image {
+    width: 140em;
+    left: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .hero__image {
+    width: 100%;
+    top: -8em;
+  }
+  .hero__testimonial {
+    font-size: 1.5rem;
+  }
+  .hero__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+/*# sourceMappingURL=style.css.map */

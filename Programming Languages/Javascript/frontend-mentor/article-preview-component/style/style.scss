@@ -1,0 +1,215 @@
+@import "./variables";
+
+*{ padding: 0; margin: 0; box-sizing: border-box; }
+
+body{
+    background: $bgColor;
+    font-family: $family;
+    color: $primaryColor;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    margin-top: 4em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: $breakpoint-mobile;
+    background: white;
+    border-radius: 20px;
+    
+    img{
+        border-radius: 20px 20px 0 0;
+    }
+
+    h2{
+        padding: 1.5em 1em 0em 1em;
+        font-size: 1.3rem;
+    }
+
+    .article__info{
+        padding: 1em 1.5em 2.5em 1.5em;
+        font-size: 1rem;
+        line-height: 1.7em;
+        color: $secondayColor;
+    }
+}
+
+.info__author{
+
+    padding-bottom: 1.5em;
+    margin: 0 1.5em;
+    .info__author__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    img{
+        border-radius: 50%;
+        width: 10%;
+        margin-right: 1em;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .name{
+        color: $primaryColor;
+        font-weight: $bold;
+    }
+
+    .date{
+        font-size: $body;
+        color: $tertiaryColor;
+    }
+
+    button{
+        border-radius: 50%;
+        border: none;
+        margin-left: 7em;
+        /*This was add*/
+        position: relative;
+        z-index: 10;
+        &:hover{
+            opacity: 0.75;
+            cursor: pointer;
+        }
+
+        &:active{
+            background-color: $primaryColor;
+        }
+    }
+
+    .icon__share{
+        width: 2.4em;
+        padding: 0.5em;
+        margin-right: 0;
+        
+    }
+
+}
+
+.hover__share{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2.3em 2.5em 2.8em 2.5em;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.5em;
+    color: $tertiaryColor;
+    background-color: $primaryColor;
+    //transition: .5s ease;
+    margin: 2em -1.9em -2em -1.9em;
+    img{
+        border-radius: 0px 0px 0px 0px;
+        margin-left: 1.5em;
+        transition: .5s ease;
+        &:hover{
+            opacity: 0.75;
+            cursor: pointer;
+        }
+    }
+    // display: none;
+}
+
+@media (min-width: 1000px){
+    .card{
+        margin-top: 20%;
+        flex-direction: row;
+        max-width: 900px;
+        
+        .card__image{
+            overflow: hidden;
+            border-radius: 20px 0 0 20px;
+            width: 100%;
+
+            img{
+                position: relative;
+                transform: scale(1.2) translate(0px,0px);
+            }
+            
+        }
+
+        h2{
+            padding-left: 1.9em;
+            padding-right: 1.5em;
+        }
+
+        .article__info{
+            padding-left: 2.5em;
+            padding-right: 2.5em;
+            width: 95%;
+        }
+
+        .info__author{
+            padding-bottom: 0;
+        }
+
+        .info__author__img{
+            margin-left: 1em;
+        }
+
+        .column{
+            width: 55%;
+        }
+
+        button{
+            margin-left: 8em;
+        }
+    }
+
+    /* Styles for the hover effect that override the author */
+    .hover__share{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 1.3em 2.5em;
+        margin: 0;
+        border-radius: 10px;
+        font-size: 0.8em;
+        letter-spacing: 0.5em;
+        color: $tertiaryColor;
+        background-color: $primaryColor;
+        top: 50%;
+        bottom: 111px;
+        left: 66%;
+        width: 58%;
+
+    img{
+        border-radius: 0px 0px 0px 0px;
+        margin-left: 1.5em;
+        width: 12%;
+        &:hover{
+            opacity: 0.75;
+            cursor: pointer;
+        }
+    }
+
+    .triangle{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 42px;
+        left: 134px;
+        background-color: $primaryColor;
+        transform: rotateY(0deg) rotate(45deg);
+    }
+
+    display: none;
+}
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 3em; margin-bottom: 3em;}
+.attribution a { color: hsl(228, 45%, 44%); }

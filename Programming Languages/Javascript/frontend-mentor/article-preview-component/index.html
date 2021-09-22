@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+        <div class="card__image">
+          <img src="images/drawers.jpg" alt="green drawers with flowers" title="Image">
+        </div>
+        
+        <div class="article">
+          
+          <h2>
+            Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home
+          </h2>
+          <p class="article__info">
+            Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.
+          </p>
+          
+          
+
+          <div class="info__author">
+            
+            <div class="info__author__img">
+              <img class="info__img" src="images/avatar-michelle.jpg" alt="woman photo">
+              <div class="column">
+                <span class="name">Michelle Appletons</span>
+                <span class="date">28 Jun 2020</span> 
+              </div>
+              <button class="share--btn" id="shareBtn">
+                <img class="icon__share" src="images/icon-share.svg" alt="share arrow icon">
+              </button>
+            </div>
+
+            <!-- *Override the info of author -->
+            <div class="hover__share" id="hoverInfo">
+              <p class="share__text">SHARE</p> 
+              <img class="social__icon first__icon" src="images/icon-facebook.svg" alt="facebook icon">
+              <img class="social__icon " src="images/icon-twitter.svg" alt="twitter icon">
+              <img class="social__icon" src="images/icon-pinterest.svg" alt="pinterest icon">  
+              <div class="triangle"></div>
+            </div>
+            
+          </div>
+
+          
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/AlanSeyfir">AlanSeyfir</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+  </html>
