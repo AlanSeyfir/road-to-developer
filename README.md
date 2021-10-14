@@ -1,3 +1,6 @@
+This is gonna be funny but I literally didn't too much LMAO. But right I need to learn COBOL WHAT THE WHY COBOL _sigh_ I'm learning this but when my work 
+is over I will continue with JAVASCRIPT bc yeah I want it. Man this is hard to maintai consistency
+
 Damn it's been a long time lmao but I no give ups!
 ### Ok now officially I will start the 100 days of code (although I started at 30 of Aug 2021) but anyways here is what I want to learn in this challenge.
 This is my wishlist to understand at full but let's be real it's difficult. Also I want to apply to the typical FANGish companies.
